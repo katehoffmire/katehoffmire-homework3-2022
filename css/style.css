@@ -102,7 +102,7 @@ html{
     border-top: 2px solid yellow;
   }
 
-  .container{
+    .container{
     /* Requirement 5 code here*/
     display: grid;
     grid-template-columns: 1fr 5fr 1fr;
@@ -122,10 +122,9 @@ html{
     background-position: center;
   }
 
-
   .about-image{
-    grid-column: 1 / span 3;
-    grid-row: 1 / span 1;
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
     max-height: 500px;
     overflow: hidden;
     width: 100%;
@@ -135,6 +134,7 @@ html{
     grid-column: 2;
     grid-row: 1 / span 1;
    }
+
 
    .clients-image{
     grid-column: 1 / span 3;
