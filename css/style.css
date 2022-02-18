@@ -115,7 +115,7 @@ html{
   .intro{
     background-attachment: fixed;
     background-image: url("../images/header.jpg");
-    background-color: #DDDDDD, #858585, #707070, #B3B3B3;
+    background-color: #DDDDDD;
     min-height: 400px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -176,7 +176,7 @@ html{
    }
 
    .text{
-    align: center;
+    align-content: center;
     max-height: 25vh;
     overflow: scroll;
   }
