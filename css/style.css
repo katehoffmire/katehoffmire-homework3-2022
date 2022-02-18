@@ -115,7 +115,7 @@ html{
   .intro{
     background-attachment: fixed;
     background-image: url("../images/header.jpg");
-    background-color: #DDDDDD;
+    background-color: #707070;
     min-height: 400px;
     background-size: cover;
     background-repeat: no-repeat;
