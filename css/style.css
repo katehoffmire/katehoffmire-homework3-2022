@@ -115,28 +115,20 @@ html{
   .intro{
     background-attachment: fixed;
     background-image: url("../images/header.jpg");
-    background-color: #DDDDDD;
+    background-color: #DDDDDD, #858585, #707070, #B3B3B3;
     min-height: 400px;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
   }
 
-  .images{
-    width:100%;
-  }
-
-
-  .text{
-    align: center;
-    max-height: 25vh;
-    overflow: scroll;
-  }
 
   .about-image{
-    grid-column: 1 / -1;
-    grid-row: 1 / span 3;
+    grid-column: 1 / span 3;
+    grid-row: 1 / span 1;
     max-height: 500px;
     overflow: hidden;
+    width: 100%;
    }
 
    .about{
@@ -149,6 +141,7 @@ html{
     grid-row: 2 / span 1;
     max-height: 500px;
     overflow: hidden;
+    width: 100%;
    }
 
    .clients{
@@ -161,6 +154,7 @@ html{
     grid-row: 3 / span 1;
     max-height: 500px;
     overflow: hidden;
+    width: 100%;
    }
 
    .method{
@@ -172,7 +166,8 @@ html{
     grid-column: 1 / span 3;
     grid-row: 4 / span 1;
     max-height: 500px;
-    overflow: hidden;;
+    overflow: hidden;
+    width: 100%;
    }
 
    .contact{
@@ -180,6 +175,11 @@ html{
       grid-row: 4 / span 1;
    }
 
+   .text{
+    align: center;
+    max-height: 25vh;
+    overflow: scroll;
+  }
 
   @media screen and (min-width: 700px){
     nav{
