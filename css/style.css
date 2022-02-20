@@ -106,7 +106,6 @@ html{
     /* Requirement 5 code here*/
     display: grid;
     grid-template-columns: 1fr 5fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
     row-gap: 30px;
   }
 
@@ -115,68 +114,47 @@ html{
   .intro{
     background-attachment: fixed;
     background-image: url("../images/header.jpg");
-    background-color: #707070;
+    background-color: #B3B3B3;
     min-height: 400px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
   }
 
-  .about-image{
-    grid-column: 1 / -1;
+  .about-image, .clients-image, .contact-image, .method-image{
+    grid-column: 1 / span 3;
+    overflow: hidden;
+    max-height: 500px;
+   }
+
+   img{
+    width: 100%;
+   }
+
+   .about, .clients, .method, .contact{
+    grid-column: 2 / 3;
+   }
+
+   .about, .about-image {
     grid-row: 1 / 2;
-    max-height: 500px;
-    overflow: hidden;
-    width: 100%;
    }
 
-   .about{
-    grid-column: 2;
-    grid-row: 1 / span 1;
+   .clients, .clients-image{
+    grid-row: 2 / 3;
    }
 
-
-   .clients-image{
-    grid-column: 1 / span 3;
-    grid-row: 2 / span 1;
-    max-height: 500px;
-    overflow: hidden;
-    width: 100%;
+   .method, .method-image{
+      grid-row: 3 / 4;
    }
 
-   .clients{
-    grid-column: 2;
-    grid-row: 2 / span 1;
+   .contact, .contact-image{
+      grid-row: 4 / 5;
    }
 
-   .method-image{
-    grid-column: 1 / span 3;
-    grid-row: 3 / span 1;
-    max-height: 500px;
-    overflow: hidden;
-    width: 100%;
-   }
-
-   .method{
-    grid-column: 2;
-    grid-row: 3 / span 1;
-   }
-
-   .contact-image{
-    grid-column: 1 / span 3;
-    grid-row: 4 / span 1;
-    max-height: 500px;
-    overflow: hidden;
-    width: 100%;
-   }
-
-   .contact{
-      grid-column: 2;
-      grid-row: 4 / span 1;
-   }
 
    .text{
-    align-content: center;
+    align-self: center;
+    justify-content: center;
     max-height: 25vh;
     overflow: scroll;
   }
@@ -198,7 +176,10 @@ html{
 
     a.skip:focus{
       position: absolute;
-      top: -20px;
+      top: 20px;
+      left: 0px;
+
+
     }
 
     .container{
@@ -208,47 +189,13 @@ html{
       row-gap: 30px;
     }
 
-    .about-image{
+    .clients, .contact, .about-image, .method-image{
       grid-column: 2 / span 2;
-      grid-row: 1 / span 1;
      }
 
-   .about{
-    grid-column: 3 / span 2;
-    grid-row: 1 / span 1;
+   .about, .method, .contact-image, .clients-image{
+      grid-column: 3 / span 2;
    }
-
-   .clients-image{
-    grid-column: 3 / span 2;
-    grid-row: 2 / span 1;
-    }
-
-   .clients{
-    grid-column: 2 / span 2;
-    grid-row: 2 / span 1;
-   }
-
-   .method-image{
-    grid-column: 2 / span 2;
-    grid-row: 3 / span 1;
-   }
-
-   .method{
-    grid-column: 3 / span 2;
-    grid-row: 3 / span 1;
-   }
-
-
-
-   .contact-image{
-     grid-column: 3 / span 2;
-     grid-row: 4 / span 1;
-   }
-
-   .contact{
-     grid-column: 2 / span 2;
-     grid-row: 4 / span 1;
-    }
 
 
   }
